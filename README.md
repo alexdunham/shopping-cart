@@ -4,7 +4,7 @@ This project is a basic react and redux shopping cart.
 
 It was made using [Create React App](https://github.com/facebook/create-react-app). The available scripts are below.
 
-Please make sure to run `npm install` first. 
+Please make sure to run `npm install` first. This project assumes the latest versions of node and npm.
 
 To simply run the project to view in dev mode, run `npm start`. 
 
