@@ -1,3 +1,5 @@
+#Basic shopping cart
+
 This project is a basic react and redux shopping cart.
 
 It was made using [Create React App](https://github.com/facebook/create-react-app). The available scripts are below.
