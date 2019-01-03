@@ -1,4 +1,4 @@
-#Basic shopping cart
+# Basic shopping cart
 
 This project is a basic react and redux shopping cart.
 
