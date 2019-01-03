@@ -7,11 +7,11 @@ Please make sure to run 'npm install' first.
 To simply run the project to view in dev mode, run 'npm start'. 
 
 
-I used create-react-app for time's sake, however there is a [known issue] (https://github.com/facebook/create-react-app/issues/6109) with react-scripts inside the build it created, at the time of development.
+I used create-react-app for time's sake, however there is a [known issue](https://github.com/facebook/create-react-app/issues/6109) with react-scripts inside the build it created, at the time of development.
 
-I used [Styled Components] (https://www.styled-components.com) for my styling, on top of the very basic index.css that came with create-react-app. 
+I used [Styled Components](https://www.styled-components.com) for my styling, on top of the very basic index.css that came with create-react-app. 
 
-To persist the state on refresh, I used [Redux Persist] (https://github.com/rt2zz/redux-persist).
+To persist the state on refresh, I used [Redux Persist](https://github.com/rt2zz/redux-persist).
 
 
 
