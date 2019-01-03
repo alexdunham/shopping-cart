@@ -1,28 +1,34 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Wrapper, Main, SideBar, Container } from './components/styles/Home';
+import { setAllProducts } from './store/Actions';
+import { connect } from 'react-redux';
+import Products from './components/Products';
+import Cart from './components/Cart';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+    componentDidMount() {
+        this.props.setAllProducts();
+    }
+    render() {
+        return (
+            <Container>
+                <h1>Shopping App</h1>
+                <Wrapper>
+                    <Main>
+                        <Products/>
+                    </Main>
+                    <SideBar>
+                        <Cart/>
+                    </SideBar>
+                </Wrapper>
+            </Container>
+     
+        );
+    }
 }
 
-export default App;
+const mapDispatchToProps = (dispatch) => ({
+    setAllProducts: () => dispatch(setAllProducts())
+});
+
+export default connect(null, mapDispatchToProps)(App);
